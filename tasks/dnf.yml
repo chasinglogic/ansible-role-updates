@@ -1,0 +1,9 @@
+---
+- name: DNF | Update packages
+  become: true
+  become_user: root
+  tags:
+    - updates
+  dnf:
+    name: "*"
+    state: latest
