@@ -7,4 +7,3 @@
   zypper:
     name: "*"
     state: latest
-  
