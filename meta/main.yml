@@ -4,10 +4,12 @@ galaxy_info:
   role_name: updates
   description: Optionally run blanket package updates on your Linux systems
   license: Apache
-  min_ansible_version: 2.8
+  min_ansible_version: 2.7
   platforms:
     - name: debian
-      versions:
-        - buster
+    - name: ubuntu
+    - name: redhat
+    - name: suse
+    - name: arch
   galaxy_tags:
     - updates
