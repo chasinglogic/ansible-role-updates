@@ -7,3 +7,6 @@
 
 - include_tasks: apt.yml
   when: ansible_os_family == "Debian"
+
+- include_tasks: pacman.yml
+  when: ansible_os_family == "Arch Linux"
