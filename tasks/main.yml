@@ -1,9 +1,9 @@
 ---
 - include_tasks: dnf.yml
-  when: ansible_distribution == "Fedora" or (ansible_os_family == "RedHat" and ansible_pkg_manager == "dnf")
+  when: ansible_distribution == "Fedora" or (ansible_os_family == "RedHat" and ansible_pkg_mgr == "dnf")
 
 - include_tasks: yum.yml
-  when: ansible_os_family == "RedHat" and ansible_pkg_manager == "yum"
+  when: ansible_os_family == "RedHat" and ansible_pkg_mgr == "yum"
 
 - include_tasks: apt.yml
   when: ansible_os_family == "Debian"
