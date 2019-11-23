@@ -8,8 +8,9 @@ galaxy_info:
   platforms:
     - name: debian
     - name: ubuntu
-    - name: redhat
-    - name: suse
-    - name: arch
+    - name: rhel
+    - name: fedora
+    - name: opensuse
+    - name: ArchLinux
   galaxy_tags:
     - updates
