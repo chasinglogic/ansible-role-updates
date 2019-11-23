@@ -12,7 +12,6 @@ jobs:
 
 version: 2
 workflows:
-  test:
+  run-tests:
     jobs:
       - test
-    version: 2
