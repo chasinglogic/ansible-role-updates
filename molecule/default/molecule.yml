@@ -6,13 +6,21 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: instance
-    image: debian:9
+  - name: debian10
+    image: debian:10
+  - name: ubuntu1804
+    image: ubuntu:18.04
+  - name: fedora31
+    image: fedora:31
+  - name: centos7
+    image: centos:7
+  - name: centos8
+    image: centos:8
+  - name: archlinux
+    image: archlinux/base
+  - name: opensuse-leap
+    image: opensuse/leap
 provisioner:
   name: ansible
   lint:
     name: ansible-lint
-verifier:
-  name: inspec
-  lint:
-    name: rubocop
